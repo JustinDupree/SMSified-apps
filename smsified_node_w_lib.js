@@ -15,7 +15,7 @@ app.post('/', function(req, res){
 	var complete_msg = "The callerID is " + callerID + " and they said " + message;
 
 	var sms = new SMSified('username', 'password');
-	var options = {senderAddress: '15853260802', address: my_number, message: complete_msg};
+	var options = {senderAddress: '15855550100', address: my_number, message: complete_msg};
 	
 	sms.sendMessage(options, function(result) {
 		sys.puts(sys.inspect(result));
